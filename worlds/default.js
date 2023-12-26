@@ -21,7 +21,7 @@ export function init(Constants) {
 
     Constants.UserBehaviorDirectory = "behaviors/default";
     Constants.UserBehaviorModules = [
-        "lights.js"
+        "lights.js", "popup.ts"
     ];
 
     Constants.DefaultCards = [
@@ -49,6 +49,25 @@ export function init(Constants) {
                 fileName: "/abandoned_parking_4k.jpg",
                 dataType: "jpg",
                 toneMappingExposure: 1.2
+            }
+        },
+        {
+            card: {
+                translation: [0, 0.3, -8],
+                scale: [4, 4, 4],
+                rotation: [0, 0, 0, 1],
+                layers: ["pointer"],
+                behaviorModules: ["Elected", "Popup"],
+                name: "/arrow.png",
+                cornerRadius: 0.02,
+                fileName: "/arrow.png",
+                fullBright: true,
+                modelType: "img",
+                shadow: true,
+                singleSided: true,
+                textureLocation: "3BK7IuwUDJyf_snN-xAMgFkLd91Z_Op-9rwQZ-tm_J9AKjY2MjF4bW0kKy4nMWw3MWwhMC0zNyc2bCstbTdtOBc2NRINOAQ3DRFzCSslDxgrd3F7OgQGBXpycG0rLWwhMC0zNyc2bC8rITAtNCcwMSdsLi0hIy4mJzQmJyQjNy42bQMlG3Y0cx0NdRt7EXYjOhAPGAFxBjEsE3sMNhALdS86I3cvOg1yBAp7KiltJiM2I20wMBYzFBYUBTA7cAosBCgYMnJ1NCwNMRgAMAwKKhMOcXEvACcOKTEvEgE1",
+                textureType: "image",
+                type: "2d",
             }
         }
     ];
